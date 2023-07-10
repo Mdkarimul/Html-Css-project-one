@@ -1,0 +1,113 @@
+html{
+    line-height: 1.5;
+    -webkit-text-size-adjust: 100%;
+    -moz-tab-size: 4;
+    -o-tab-size: 4;
+    tab-size: 4;
+    font-family: 'Raleway', sans-serif;
+    font-feature-settings: normal;
+}
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    padding: 0px;
+    margin:0px;
+    background-color: #000;
+    width: 100%;
+    height: 100vh;
+}
+.main{
+    width:90%;
+    height: auto;
+    margin: 0 auto;
+    border: 1px solid red;
+}
+.header{
+    width: 100%;
+    height: 58px;
+    background-color: #000;
+    display: grid;
+    grid-template-columns: 1fr 60% 20%;
+    grid-template-rows:58px;
+
+}
+.logo{
+    width:fit-content;
+    height:100%;
+    padding: 20px;
+
+}
+.header ul{
+    list-style: none;
+    display: grid;
+    grid-template-columns: minmax(90px, 50px) minmax(90px,50px) minmax(90px,50px) minmax(90px, 50px) minmax(90px,50px) minmax(90px,50px);
+    align-content: center;
+    justify-content: center;
+}
+.header ul li{
+display:inline-block;
+justify-content: space-around;
+padding:1vh;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.header ul li a{
+    color:rgba(132, 141, 148, 0.925);
+    text-decoration:none solid rgba(253, 254, 255, 0.925);
+    font-size: 14px;
+    font-weight:600;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    transition: 0.4s linear;
+}
+.header ul li a:hover{
+    color:#E2E3E4;
+}
+.signup-div{
+    width: 100%;
+    height:100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.signin{
+    color:rgba(132, 141, 148, 0.925);
+    text-decoration:none solid rgba(253, 254, 255, 0.925);
+    font-size: 14px;
+    font-weight:600;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    transition: 0.4s 0.1s linear;
+    padding: 8px 15px;
+    border-radius: 25px;
+}
+.signin:hover{
+    color:#E2E3E4; 
+    background-color:#2C2F30;
+    /* animation:0.7s ease-in 0.2 fade; */
+}
+
+@keyframes fade{
+    0%   {opacity:0; padding: 0px 4px;}
+    25%  {opacity:0.3; padding:3px 8px;}
+    50%  {opacity:0.6; padding:6px 12px;}
+    100% {opacity:1.0;  padding:8px 15px;}
+}
+.get-started{
+    color:#2C2F30;
+    text-decoration:none solid rgba(253, 254, 255, 0.925);
+    font-size: 14px;
+    font-weight:600;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    transition: 0.4s 0.1s linear;
+    padding: 8px 15px;
+    border-radius: 25px;
+    background-color: #E8E8E8;
+}
