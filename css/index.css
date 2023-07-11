@@ -6,9 +6,11 @@ html{
     tab-size: 4;
     font-family: 'Raleway', sans-serif;
     font-feature-settings: normal;
+    -webkit-font-smoothing: antialiased;
+    scroll-behavior: smooth;
 }
 i{
-    margin: 0 4px;
+    margin-left:4px;
     color: var(--color-one);
 }
 :root{
@@ -233,6 +235,7 @@ align-items: center;
 .scroll-down{
     position: absolute;
     left:50%;
+    bottom:80px;
     transform: translate(-50%);
     font-size: 14px;
     font-weight:600;
